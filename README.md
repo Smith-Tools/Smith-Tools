@@ -68,10 +68,10 @@ dependencies: [
 #### **🧠 Claude Code Skill**
 ```bash
 # Install Smith Framework skill for Claude Code
-skill: "smith"
+git clone https://github.com/Smith-Tools/smith-skill.git ~/.claude/skills/smith
 
-# Or install via repository
-skill: "https://github.com/Smith-Tools/smith-skill"
+# Or clone to custom directory
+git clone https://github.com/Smith-Tools/smith-skill.git ~/my-claude-skills/smith
 ```
 
 ### **Usage Examples**
