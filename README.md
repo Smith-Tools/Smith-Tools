@@ -37,14 +37,31 @@ Smith Tools Ecosystem
 
 ### **Installation**
 
+#### **🍺 Homebrew (Recommended)**
 ```bash
+# Add the tap
+brew tap Smith-Tools/smith
+
 # Install all Smith Tools
-brew install smith-tools/smith/smith-tools
+brew install smith-core smith-cli smith-spmsift smith-sbsift smith-xcsift
 
 # Or install individual tools
-brew install smith-tools/smith/smith-cli
-brew install smith-tools/smith/smith-xcsift
-brew install smith-tools/smith/smith-spmsift
+brew install smith-cli          # Unified interface
+brew install smith-spmsift      # SPM analysis
+brew install smith-sbsift       # Swift build analysis
+brew install smith-xcsift       # Xcode build analysis
+```
+
+#### **📦 Swift Package Manager**
+```swift
+// Add to your Package.swift dependencies
+dependencies: [
+    .package(url: "https://github.com/Smith-Tools/smith-core", from: "1.0.0"),
+    .package(url: "https://github.com/Smith-Tools/smith-cli", from: "1.0.0"),
+    .package(url: "https://github.com/Smith-Tools/smith-spmsift", from: "1.0.0"),
+    .package(url: "https://github.com/Smith-Tools/smith-sbsift", from: "1.0.0"),
+    .package(url: "https://github.com/Smith-Tools/smith-xcsift", from: "1.0.0")
+]
 ```
 
 ### **Usage Examples**
@@ -127,10 +144,15 @@ Smith Tools is available under the [MIT License](LICENSE).
 
 ## 🔗 **Links**
 
-- **[Smith Framework](https://github.com/Smith-Tools/smith-framework)** - Development patterns and discipline
-- **[Documentation](https://smith-tools.github.io)** - Complete documentation site
+- **[Smith Tools Organization](https://github.com/Smith-Tools)** - All repositories
+- **[Homebrew Tap](https://github.com/Smith-Tools/homebrew-smith)** - Install via Homebrew
+- **[smith-core](https://github.com/Smith-Tools/smith-core)** - Core framework
+- **[smith-cli](https://github.com/Smith-Tools/smith-cli)** - Unified interface
+- **[smith-spmsift](https://github.com/Smith-Tools/smith-spmsift)** - SPM analysis
+- **[smith-sbsift](https://github.com/Smith-Tools/smith-sbsift)** - Swift build analysis
+- **[smith-xcsift](https://github.com/Smith-Tools/smith-xcsift)** - Xcode build analysis
 - **[Issues](https://github.com/Smith-Tools/smith-core/issues)** - Bug reports and feature requests
-- **[Discussions](https://github.com/Smith-Tools/smith-core/discussions)** - Community discussions
+- **[Discussions](https://github.com/Smith-Tools/Smith-Tools/discussions)** - Community discussions
 
 ---
 
