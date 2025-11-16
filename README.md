@@ -30,7 +30,8 @@ Smith Tools Ecosystem
 ├── smith-cli           🎛️  Unified CLI interface for all tools
 ├── smith-spmsift       📦 Swift Package Manager analysis
 ├── smith-sbsift        ⚡ Swift build output analysis
-└── smith-xcsift        🏗️  Xcode build output analysis
+├── smith-xcsift        🏗️  Xcode build output analysis
+└── smith-skill         🧠 Claude Code skill with Smith Framework patterns
 ```
 
 ## 🚀 **Quick Start**
@@ -62,6 +63,15 @@ dependencies: [
     .package(url: "https://github.com/Smith-Tools/smith-sbsift", from: "1.0.0"),
     .package(url: "https://github.com/Smith-Tools/smith-xcsift", from: "1.0.0")
 ]
+```
+
+#### **🧠 Claude Code Skill**
+```bash
+# Install Smith Framework skill for Claude Code
+skill: "smith"
+
+# Or install via repository
+skill: "https://github.com/Smith-Tools/smith-skill"
 ```
 
 ### **Usage Examples**
@@ -151,6 +161,7 @@ Smith Tools is available under the [MIT License](LICENSE).
 - **[smith-spmsift](https://github.com/Smith-Tools/smith-spmsift)** - SPM analysis
 - **[smith-sbsift](https://github.com/Smith-Tools/smith-sbsift)** - Swift build analysis
 - **[smith-xcsift](https://github.com/Smith-Tools/smith-xcsift)** - Xcode build analysis
+- **[smith-skill](https://github.com/Smith-Tools/smith-skill)** - Claude Code skill
 - **[Issues](https://github.com/Smith-Tools/smith-core/issues)** - Bug reports and feature requests
 - **[Discussions](https://github.com/Smith-Tools/Smith-Tools/discussions)** - Community discussions
 
